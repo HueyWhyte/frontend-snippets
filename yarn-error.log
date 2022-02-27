@@ -1,0 +1,56 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Kwamina\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js
+
+PATH: 
+  C:\Program Files\PowerShell\7;C:\Windows;C:\Windows\system32;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\PowerShell\7\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\nodejs\;C:\oraclexe\app\oracle\product\10.2.0\server\bin;C:\Users\Kwamina\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\Java\jdk-15\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-15;C:\ProgramData\ComposerSetup\bin;C:\Users\Kwamina\AppData\Roaming\Composer\vendor\bin;C:\Program Files\dotnet\;C:\php;C:\Users\Kwamina\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\Kwamina\AppData\Local\Programs\Python\Python310\;C:\Users\Kwamina\AppData\Local\Microsoft\WindowsApps;C:\Users\Kwamina\AppData\Roaming\npm;C:\Users\Kwamina\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\heroku\bin;C:\Users\Kwamina\AppData\Local\GitHubDesktop\bin;C:\Users\Kwamina\AppData\Local\atom\bin;C:\Users\Kwamina\.dotnet\tools
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  16.13.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: read ECONNRESET
+      at TLSWrap.onStreamRead (node:internal/stream_base_commons:220:20)
+
+npm manifest: 
+  {
+    "name": "remix-app-template",
+    "private": true,
+    "description": "",
+    "license": "",
+    "sideEffects": false,
+    "scripts": {
+      "build": "cross-env NODE_ENV=production remix build",
+      "dev": "cross-env NODE_ENV=development remix dev",
+      "postinstall": "remix setup node"
+    },
+    "dependencies": {
+      "@remix-run/react": "^1.2.2",
+      "@remix-run/vercel": "^1.2.2",
+      "react": "^17.0.2",
+      "react-dom": "^17.0.2",
+      "remix": "^1.2.2"
+    },
+    "devDependencies": {
+      "@remix-run/dev": "^1.2.2",
+      "@remix-run/serve": "^1.2.2",
+      "@types/react": "^17.0.24",
+      "@types/react-dom": "^17.0.9",
+      "cross-env": "^7.0.3",
+      "typescript": "^4.5.5"
+    },
+    "engines": {
+      "node": ">=14"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

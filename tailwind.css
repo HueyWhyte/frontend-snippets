@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@300;400;600&display=swap");
+
+.buz-font {
+  font-family: "Noto Serif Display", serif;
+}
