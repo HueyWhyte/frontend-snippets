@@ -4,7 +4,7 @@ import { FiPlus, FiMenu, FiSend } from "react-icons/fi";
 
 import chats from "../assets/tweets";
 
-export default function Message() {
+const Message = () => {
   let param = useParams();
   const [user, setUser] = useState({});
 
@@ -97,7 +97,7 @@ export default function Message() {
       </section>
     </>
   );
-}
+};
 
 const MESSAGES = [
   {
@@ -155,3 +155,5 @@ const MESSAGES = [
     image: "",
   },
 ];
+
+export default Message;
