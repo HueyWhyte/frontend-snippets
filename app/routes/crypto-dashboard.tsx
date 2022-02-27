@@ -195,7 +195,7 @@ export default function CryptoDashboard() {
           <div className="flex mt-4 overflow-x-auto scrollbar">
             <div className="w-[43%] mr-6">
               <div className="flex items-center mb-3">
-                <img src={btc} className="w-6 h-6" alt="" srcset="" />
+                <img src={btc} className="w-6 h-6" alt="" />
                 <p className="text-white font-bold mx-3">Bitcoin</p>
                 <p>BTC</p>
               </div>
@@ -210,7 +210,7 @@ export default function CryptoDashboard() {
 
             <div className="w-[43%] mr-6">
               <div className="flex items-center mb-3">
-                <img src={eth} className="w-6 h-6" alt="" srcset="" />
+                <img src={eth} className="w-6 h-6" alt="" />
                 <p className="text-white font-bold mx-3">Ethereum</p>
                 <p>ETH</p>
               </div>
@@ -225,7 +225,7 @@ export default function CryptoDashboard() {
 
             <div className="w-[43%]">
               <div className="flex items-center mb-3">
-                <img src={doge} className="w-6 h-6" alt="" srcset="" />
+                <img src={doge} className="w-6 h-6" alt="" />
                 <p className="text-white font-bold mx-3">Dogecoin</p>
                 <p>DOGE</p>
               </div>
@@ -276,7 +276,7 @@ export default function CryptoDashboard() {
                 <p>Bitcoin Price</p>
 
                 <div className="flex items-center">
-                  <img src={btc} className="w-6 h-6" alt="" srcset="" />
+                  <img src={btc} className="w-6 h-6" alt="" />
                   <p className="text-white font-bold mx-3">Bitcoin</p>
                   <p>BTC</p>
                 </div>
@@ -325,7 +325,7 @@ export default function CryptoDashboard() {
           <p className="font-bold text-white text-lg mb-2">My Portfolio</p>
           {histories.map((history) => (
             <div key={history.id} className="flex items-center my-3">
-              <img src={history.icon} className="w-9 h-9" alt="" srcset="" />
+              <img src={history.icon} className="w-9 h-9" alt="" />
 
               <div className="ml-2">
                 <p className="font-bold text-white">{history.name}</p>

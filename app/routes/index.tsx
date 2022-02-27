@@ -10,7 +10,7 @@ const templates = [
 const Index = () => {
   return (
     <div className="flex flex-col">
-      <h1 className="buz-font text-8xl text-center mt-20 mb-20 underline">
+      <h1 className="buz-font text-center mt-20 mb-20 underline text-4xl md:text-8xl ">
         Available Templates
       </h1>
 
