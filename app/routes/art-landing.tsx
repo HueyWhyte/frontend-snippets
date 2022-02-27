@@ -31,7 +31,7 @@ const ArtLanding = () => {
         </div>
       </nav>
 
-      <div className="artwork-container h-full w-full text-white font-artwork flex flex-col justify-center items-center overflow-hidden">
+      <div className="artwork-container h-screen w-full text-white font-artwork flex flex-col justify-center items-center overflow-hidden">
         <motion.h1
           initial={{ x: -300 }}
           animate={{ x: 0 }}
@@ -40,7 +40,7 @@ const ArtLanding = () => {
             type: "spring",
             bounce: 0.35,
           }}
-          className="text-9xl w-4/5 mx-auto my-auto text-center z-40 mt-24 p-0 "
+          className="text-4xl md:text-9xl w-4/5 mx-auto my-auto text-center z-40 mt-24 p-0 "
         >
           COLLECT SUPER
         </motion.h1>
@@ -51,7 +51,7 @@ const ArtLanding = () => {
           transition={{
             duration: 2,
           }}
-          className="text-9xl w-4/5 mx-auto my-auto text-center z-40 m-0 p-0"
+          className="text-4xl md:text-9xl w-4/5 mx-auto my-auto text-center z-40 m-0 p-0"
         >
           RARE DIGITAL
         </motion.h1>
@@ -64,7 +64,7 @@ const ArtLanding = () => {
             type: "spring",
             bounce: 0.35,
           }}
-          className="text-9xl w-4/5 mx-auto my-auto text-center z-40 m-0 p-0"
+          className="text-4xl md:text-9xl w-4/5 mx-auto my-auto text-center z-40 m-0 p-0"
         >
           ARTWORK
         </motion.h1>

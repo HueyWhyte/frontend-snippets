@@ -50,7 +50,7 @@ function services() {
         <p>consectetur adipisicing elit. Fugit</p>
       </section>
 
-      <h1 className="buz-font font-semibold text-5xl md:text-8xl w-4/5 md:w-2/3 text-center mt-11 mr-auto ml-auto">
+      <h1 className="buz-font font-semibold text-5xl md:text-8xl w-full md:w-2/3 text-center mt-11 mr-auto ml-auto">
         YOUR TRULY BESPOKE EXPERIENCE
       </h1>
 
@@ -64,7 +64,7 @@ function services() {
 
       <section className="mr-auto ml-auto mt-11 flex">
         <p className="border-t border-yellow-600 w-32 mt-3 mr-3" />
-        <p>THE BEAUTY</p>
+        <p>OUR STORY</p>
       </section>
 
       <section className="2-4/5 md:w-2/3 flex flex-col md:flex-row mt-11 mr-auto ml-auto">
@@ -76,7 +76,7 @@ function services() {
           />
         </div>
 
-        <div className="w-4/5 md:w-1/2 md:pl-14 mr-auto ml-auto mt-11">
+        <div className="w-4/5 md:w-1/2 md:pl-14 mr-auto ml-auto mt-11 md:mt-0">
           <p className="mb-5 text-justify">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non aut at
             inventore consectetur fugit facere dolorum magni molestiae voluptate
@@ -128,7 +128,7 @@ function services() {
       </section> */}
 
       <section className="m-8 w-4/5 md:w-1/2 mt-48 mr-auto ml-auto">
-        <p>QUALITY</p>
+        <p>GALLERY</p>
         <h1 className="buz-font font-semibold text-4xl md:text-7xl mt-8">
           Superior Quality <br /> & Intelligent Design
         </h1>
@@ -143,7 +143,7 @@ function services() {
             omnis cum nulla fugiat dicta autem at dolores accusantium unde.
           </p>
 
-          <Button name="Lorem ipsum" className="mt-9 mr-auto pr-8 pl-8" />
+          <Button name="VIEW GALLERY" className="mt-9 mr-auto pr-8 pl-8" />
         </div>
       </section>
 
@@ -161,15 +161,17 @@ function services() {
             </p>
           </div>
 
-          <div className="flex flex-1 md:ml-36 mt-11">
+          <div className="flex flex-1 md:ml-36 mt-11 md:mt-0">
             <div className="mr-3">
               <h3 className="text-2xl buz-font mt-4 mb-4">Contact</h3>
-              <p>Lorem ipsum dolor sit amet, perspiciatis?</p>
+              <p>Lorem ipsum dolor, perspiciatis?</p>
+              <p>Lorem ipsum dolor sit amet?</p>
             </div>
 
             <div>
-              <h3 className="text-2xl buz-font mt-4 mb-4">Contact</h3>
-              <p>Lorem ipsum dolor sit amet, perspiciatis?</p>
+              <h3 className="text-2xl buz-font mt-4 mb-4">Address</h3>
+              <p>perspiciatis?</p>
+              <p>Lorem ipsum dolor sit amet</p>
             </div>
           </div>
         </div>
@@ -180,9 +182,9 @@ function services() {
           </div>
 
           <div className="flex md:ml-36 flex-1 justify-between mt-11">
-            <p className="mr-4 text-yellow-600">asfasfasf</p>
-            <p className="mr-4 text-yellow-600">asfasfasf</p>
-            <p className="mr-4 text-yellow-600">asfasfasf</p>
+            <p className="mr-4 text-yellow-600">WHATSAPP</p>
+            <p className="mr-4 text-yellow-600">INSTAGRAM</p>
+            <p className="mr-4 text-yellow-600">FACEBOOK</p>
           </div>
         </div>
 

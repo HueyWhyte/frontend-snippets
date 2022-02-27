@@ -22,7 +22,7 @@ function Index() {
         <p>consectetur adipisicing Fugit.</p>
       </div>
 
-      <h1 className="buz-font font-semibold text-center m-8 text-5xl md:text-8xl w-4/5 md:w-2/3 ">
+      <h1 className="buz-font font-semibold text-center m-8 text-5xl md:text-8xl w-full md:w-2/3 ">
         YOUR TRULY BESPOKE EXPERIENCE
       </h1>
 
@@ -34,7 +34,7 @@ function Index() {
         quo eos? Soluta adipisci autem possimus!
       </p>
 
-      <Button name="Lorem ipsum dolor sit amet" className="m-9" />
+      <Button name="REQUEST AN APPOINTMENT" className="m-9" />
 
       <section className=" w-5/6 md:w-1/2 mt-8">
         <img
@@ -60,7 +60,7 @@ function Index() {
               neque, atque sed in ratione rerum ullam ducimus vel.
             </p>
 
-            <Button name="Browse More" className="mr-20" />
+            <Button name="RESPONSE PROCESS >" className="mr-20" />
           </div>
         </div>
 
@@ -98,7 +98,7 @@ function Index() {
               sequi eius ut est! Nam repellendus ex, necessitatibus quae.
             </p>
 
-            <Button name="Browse More" className="" />
+            <Button name="OUR SERVICES" />
           </div>
         </div>
       </section>
