@@ -1,6 +1,11 @@
 import { Link } from "remix";
 
-const templates = [{ url: "fashion", name: "Fashion Design" }];
+const templates = [
+  { url: "fashion", name: "Fashion Design" },
+  { url: "art-landing", name: "Art Landing Page" },
+  { url: "crypto-dashboard", name: "Crypto Dashboard" },
+  { url: "chat", name: "Chat" },
+];
 
 const Index = () => {
   return (
@@ -9,9 +14,9 @@ const Index = () => {
         Available Templates
       </h1>
 
-      <section className="w-5/6 mr-auto ml-auto">
+      <section className="flex w-5/6 mr-auto ml-auto flex-wrap justify-evenly">
         {templates.map((template) => (
-          <Link to={`${template.url}`}>
+          <Link className="m-3" to={`${template.url}`} targer="__blank">
             <h3 className="buz-font text-lg">{template.name}</h3>
           </Link>
         ))}

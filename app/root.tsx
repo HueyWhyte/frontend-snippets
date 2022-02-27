@@ -16,7 +16,7 @@ export const links: LinksFunction = () => {
 export const meta: MetaFunction = () => {
   return {
     title: "Frontend Snippets",
-    description: "Best collection of frontend components",
+    description: "Collection of frontend Components and Pages :)",
   };
 };
 
