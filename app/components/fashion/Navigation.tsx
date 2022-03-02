@@ -1,4 +1,4 @@
-import { Link } from "remix";
+import { NavLink } from "remix";
 
 const linkss = [
   { url: "", name: "Home" },
@@ -11,24 +11,24 @@ const linkss = [
 
 function Navigation() {
   return (
-    <nav className="fixed flex w-full h-16 bg-white flex-row items-center p-3 shadow-sm shadow-gray-200">
+    <nav className="fixed flex h-16 w-full flex-row items-center bg-white p-3 shadow-sm shadow-gray-200">
       <section>
-        <Link to="/fashion">
+        <NavLink to="/fashion">
           <img
             src="https://th.bing.com/th/id/R.d274f48cbe6e7081140c6c661f112407?rik=leuylBUb7lWV5g&pid=ImgRaw&r=0"
-            className="w-9 h-9 m-4"
+            className="m-4 h-9 w-9"
             alt=""
           />
-        </Link>
+        </NavLink>
       </section>
 
       <section className="ml-auto">
         {linkss.map((link, index) => (
-          <Link
+          <NavLink
             key={index}
-            className="m-4 text-md font-bold"
+            className="text-md m-4 font-bold"
             to={`/fashion/${link.url}`}
-          >{`${link.name}`}</Link>
+          >{`${link.name}`}</NavLink>
         ))}
       </section>
     </nav>

@@ -1,24 +1,27 @@
 import { ReactNode } from "react";
+import Footer from "./Footer";
 import Navigation from "./Navigation";
 
-const Layout = ({
+function Layout({
   children,
   className,
 }: {
   children: ReactNode;
-  className?: string;
-}) => {
+  className: string;
+}) {
   return (
     <>
       <Navigation />
 
       <main
-        className={`flex min-h-screen flex-col items-center bg-gray-100  pt-32 pb-32 ${className}`}
+        className={`flex min-h-screen flex-col items-center pt-16 pb-32 ${className}`}
       >
         {children}
       </main>
+
+      <Footer />
     </>
   );
-};
+}
 
 export default Layout;

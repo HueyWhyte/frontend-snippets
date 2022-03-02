@@ -5,6 +5,7 @@ const templates = [
   { url: "art-landing", name: "Art Landing Page" },
   { url: "crypto-dashboard", name: "Crypto Dashboard" },
   { url: "chat", name: "Chat" },
+  { url: "eduo", name: "E-learn" },
 ];
 
 const Index = () => {

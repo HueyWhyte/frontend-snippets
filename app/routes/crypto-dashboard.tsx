@@ -71,30 +71,30 @@ export const data = {
 
 export default function CryptoDashboard() {
   return (
-    <div className="flex bg-[#21212a] w-screen h-screen text-gray-400 crypto-container">
-      <section className="w-72 h-full flex flex-col pl-8  border-r border-r-gray-600">
-        <div className="flex items-center h-14 text-xl font-bold  mt-3">
+    <div className="crypto-container flex h-screen w-screen bg-[#21212a] text-gray-400">
+      <section className="flex h-full w-72 flex-col border-r  border-r-gray-600 pl-8">
+        <div className="mt-3 flex h-14 items-center text-xl  font-bold">
           <img
             src="https://www.freepnglogos.com/uploads/-d-logo-png-5.png"
             alt=""
-            className="h-9 w-9 mr-4 bg-pink-200 p-2 rounded-full object-cover"
+            className="mr-4 h-9 w-9 rounded-full bg-pink-200 object-cover p-2"
           />
 
           <p>ManyCrypto</p>
         </div>
 
         <p className="mt-20 mb-5">MENU</p>
-        <Link to="/" className="flex text-xl items-center pb-2">
+        <Link to="/" className="flex items-center pb-2 text-xl">
           <FiHome size={25} />
           <p className="p-2">Dashboard</p>
         </Link>
 
-        <Link to="/" className="flex text-xl items-center pb-2">
+        <Link to="/" className="flex items-center pb-2 text-xl">
           <IoIosWallet size={25} />
           <p className="p-2">Wallet</p>
         </Link>
 
-        <Link to="/" className="flex text-xl items-center pb-2">
+        <Link to="/" className="flex items-center pb-2 text-xl">
           <IoIosStats size={25} />
           <p className="p-2">Statistics</p>
         </Link>
@@ -109,25 +109,25 @@ export default function CryptoDashboard() {
           <p className="p-2">Exchenge</p>
         </Link> */}
 
-        <Link to="/" className="flex text-xl items-center pb-2">
+        <Link to="/" className="flex items-center pb-2 text-xl">
           <IoIosPaper size={25} />
           <p className="p-2">News</p>
         </Link>
 
         <p className="mt-10 mb-5">OTHERS</p>
-        <Link to="/" className="flex text-xl items-center pb-2">
+        <Link to="/" className="flex items-center pb-2 text-xl">
           <FiHelpCircle size={25} />
           <p className="p-2">Help</p>
         </Link>
 
-        <Link to="/" className="flex text-xl items-center pb-2">
+        <Link to="/" className="flex items-center pb-2 text-xl">
           <FiSettings size={25} />
           <p className="p-2">Settings</p>
         </Link>
       </section>
 
-      <section className="flex flex-col flex-1 h-full">
-        <div className="flex items-center h-14 text-xl px-5 rounded-xl mt-3 bg-[#191921] mx-4 shadow-xl">
+      <section className="flex h-full flex-1 flex-col">
+        <div className="mx-4 mt-3 flex h-14 items-center rounded-xl bg-[#191921] px-5 text-xl shadow-xl">
           <FiSearch size={23} />
           <motion.input
             // whileFocus={{ backgroundColor: "#2c4cff" }}
@@ -135,26 +135,26 @@ export default function CryptoDashboard() {
             name="search"
             id="search"
             placeholder="Search Crypto currency, new, etc..."
-            className="bg-transparent flex-1 px-5 h-full outline-none "
+            className="h-full flex-1 bg-transparent px-5 outline-none "
           />
         </div>
 
-        <section className="flex flex-col mt-3 bg-[#191921] mx-4 shadow-xl rounded-xl p-5 ">
-          <p className="font-bold text-white text-2xl">Total Balance</p>
+        <section className="mx-4 mt-3 flex flex-col rounded-xl bg-[#191921] p-5 shadow-xl ">
+          <p className="text-2xl font-bold text-white">Total Balance</p>
 
-          <div className="flex mt-4 w-ful">
-            <div className="flex-1 mr-3">
+          <div className="w-ful mt-4 flex">
+            <div className="mr-3 flex-1">
               <p>My Balance</p>
-              <h2 className="text-5xl text-white my-3">$932,128.00</h2>
+              <h2 className="my-3 text-5xl text-white">$932,128.00</h2>
               <p>19.3523523 BTC</p>
             </div>
 
-            <div className="flex flex-col w-[22%] mx-6">
+            <div className="mx-6 flex w-[22%] flex-col">
               <div className="flex items-center">
-                <img src={eth} alt="" className="w-11 h-11" />
+                <img src={eth} alt="" className="h-11 w-11" />
 
-                <div className="px-3 mr-auto">
-                  <p className="text-white font-bold text-xl">$1,331.00</p>
+                <div className="mr-auto px-3">
+                  <p className="text-xl font-bold text-white">$1,331.00</p>
                   <p>Income</p>
                 </div>
               </div>
@@ -162,18 +162,18 @@ export default function CryptoDashboard() {
               <motion.p
                 whiteTap={{}}
                 whileHover={{ backgroundColor: "#1e7cf7" }}
-                className="bg-blue-600 rounded-lg py-3 text-center text-white font-bold mt-auto cursor-pointer shadow-sm shadow-blue-600"
+                className="mt-auto cursor-pointer rounded-lg bg-blue-600 py-3 text-center font-bold text-white shadow-sm shadow-blue-600"
               >
                 RECEIVE
               </motion.p>
             </div>
 
-            <div className="flex flex-col w-[22%]">
+            <div className="flex w-[22%] flex-col">
               <div className="flex items-center">
-                <img src={btc} alt="" className="w-11 h-11" />
+                <img src={btc} alt="" className="h-11 w-11" />
 
-                <div className="px-3 mr-auto">
-                  <p className="text-white font-bold text-xl">$234.00</p>
+                <div className="mr-auto px-3">
+                  <p className="text-xl font-bold text-white">$234.00</p>
                   <p>Expense</p>
                 </div>
               </div>
@@ -181,7 +181,7 @@ export default function CryptoDashboard() {
               <motion.p
                 whiteTap={{}}
                 whileHover={{ backgroundColor: "#00cea1" }}
-                className="bg-teal-500 rounded-lg py-3 text-center text-white font-bold mt-auto cursor-pointer shadow-sm shadow-teal-500"
+                className="mt-auto cursor-pointer rounded-lg bg-teal-500 py-3 text-center font-bold text-white shadow-sm shadow-teal-500"
               >
                 SEND
               </motion.p>
@@ -189,95 +189,95 @@ export default function CryptoDashboard() {
           </div>
         </section>
 
-        <section className="flex flex-col mt-3 bg-[#191921] mx-4 shadow-xl rounded-xl p-5 ">
-          <p className="font-bold text-white text-2xl">Watchlist</p>
+        <section className="mx-4 mt-3 flex flex-col rounded-xl bg-[#191921] p-5 shadow-xl ">
+          <p className="text-2xl font-bold text-white">Watchlist</p>
 
-          <div className="flex mt-4 overflow-x-auto scrollbar">
-            <div className="w-[43%] mr-6">
-              <div className="flex items-center mb-3">
-                <img src={btc} className="w-6 h-6" alt="" />
-                <p className="text-white font-bold mx-3">Bitcoin</p>
+          <div className="scrollbar mt-4 flex overflow-x-auto">
+            <div className="mr-6 w-[43%]">
+              <div className="mb-3 flex items-center">
+                <img src={btc} className="h-6 w-6" alt="" />
+                <p className="mx-3 font-bold text-white">Bitcoin</p>
                 <p>BTC</p>
               </div>
 
-              <div className="flex bg-[#21212ab6] rounded-xl">
-                <div className="ml-auto bg-[#2b2b36] m-3 py-2 px-6 rounded-xl">
-                  <p className="text-white font-bold text-xl ">$43,577.00</p>
-                  <p className="text-green-400 text-center">+0.29%</p>
+              <div className="flex rounded-xl bg-[#21212ab6]">
+                <div className="m-3 ml-auto rounded-xl bg-[#2b2b36] py-2 px-6">
+                  <p className="text-xl font-bold text-white ">$43,577.00</p>
+                  <p className="text-center text-green-400">+0.29%</p>
                 </div>
               </div>
             </div>
 
-            <div className="w-[43%] mr-6">
-              <div className="flex items-center mb-3">
-                <img src={eth} className="w-6 h-6" alt="" />
-                <p className="text-white font-bold mx-3">Ethereum</p>
+            <div className="mr-6 w-[43%]">
+              <div className="mb-3 flex items-center">
+                <img src={eth} className="h-6 w-6" alt="" />
+                <p className="mx-3 font-bold text-white">Ethereum</p>
                 <p>ETH</p>
               </div>
 
-              <div className="flex bg-[#21212ab6] rounded-xl">
-                <div className="ml-auto bg-[#2b2b36] m-3 py-2 px-6 rounded-xl">
-                  <p className="text-white font-bold text-xl ">$43,577.00</p>
-                  <p className="text-red-400 text-center">-0.15%</p>
+              <div className="flex rounded-xl bg-[#21212ab6]">
+                <div className="m-3 ml-auto rounded-xl bg-[#2b2b36] py-2 px-6">
+                  <p className="text-xl font-bold text-white ">$43,577.00</p>
+                  <p className="text-center text-red-400">-0.15%</p>
                 </div>
               </div>
             </div>
 
             <div className="w-[43%]">
-              <div className="flex items-center mb-3">
-                <img src={doge} className="w-6 h-6" alt="" />
-                <p className="text-white font-bold mx-3">Dogecoin</p>
+              <div className="mb-3 flex items-center">
+                <img src={doge} className="h-6 w-6" alt="" />
+                <p className="mx-3 font-bold text-white">Dogecoin</p>
                 <p>DOGE</p>
               </div>
 
-              <div className="flex bg-[#21212ab6] rounded-xl">
-                <div className="ml-auto bg-[#2b2b36] m-3 py-2 px-6 rounded-xl">
-                  <p className="text-white font-bold text-xl ">$43,577.00</p>
-                  <p className="text-red-400 text-center">-0.15%</p>
+              <div className="flex rounded-xl bg-[#21212ab6]">
+                <div className="m-3 ml-auto rounded-xl bg-[#2b2b36] py-2 px-6">
+                  <p className="text-xl font-bold text-white ">$43,577.00</p>
+                  <p className="text-center text-red-400">-0.15%</p>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="flex-1 my-3 bg-[#191921] mx-4 shadow-xl rounded-xl p-5 h-20 ">
-          <p className="font-bold text-white text-2xl">Statistics</p>
+        <section className="my-3 mx-4 h-20 flex-1 rounded-xl bg-[#191921] p-5 shadow-xl ">
+          <p className="text-2xl font-bold text-white">Statistics</p>
 
           <Line options={options} data={data} height="70" />
         </section>
       </section>
 
-      <section className="flex flex-col w-96 h-full">
-        <div className="flex h-14 items-center justify-end mr-11 mt-3">
+      <section className="flex h-full w-96 flex-col">
+        <div className="mr-11 mt-3 flex h-14 items-center justify-end">
           <FiBell size={20} />
 
           <img
             src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
             alt=""
-            className="h-11 w-11 mx-5 rounded-full object-cover"
+            className="mx-5 h-11 w-11 rounded-full object-cover"
           />
 
           <FiArrowDown size={20} />
         </div>
 
-        <div className="flex h-11 mx-2 mt-3">
-          <p className="flex-1 text-white text-center font-bold bg-[#191921] py-3 rounded-t-xl">
+        <div className="mx-2 mt-3 flex h-11">
+          <p className="flex-1 rounded-t-xl bg-[#191921] py-3 text-center font-bold text-white">
             Buy
           </p>
-          <p className="flex-1 text-center font-bold bg-transparent py-3">
+          <p className="flex-1 bg-transparent py-3 text-center font-bold">
             Sell
           </p>
         </div>
 
-        <div className="flex flex-col flex-1 m-2 mt-0 bg-[#191921] rounded-b-xl shadow-xl ">
-          <div className="flex flex-col flex-1 m-2 bg-[#191921] p-4 ">
-            <div className="flex justify-between items-center border-solid border border-gray-700 rounded-lg p-2 my-1">
+        <div className="m-2 mt-0 flex flex-1 flex-col rounded-b-xl bg-[#191921] shadow-xl ">
+          <div className="m-2 flex flex-1 flex-col bg-[#191921] p-4 ">
+            <div className="my-1 flex items-center justify-between rounded-lg border border-solid border-gray-700 p-2">
               <div>
                 <p>Bitcoin Price</p>
 
                 <div className="flex items-center">
-                  <img src={btc} className="w-6 h-6" alt="" />
-                  <p className="text-white font-bold mx-3">Bitcoin</p>
+                  <img src={btc} className="h-6 w-6" alt="" />
+                  <p className="mx-3 font-bold text-white">Bitcoin</p>
                   <p>BTC</p>
                 </div>
               </div>
@@ -285,11 +285,11 @@ export default function CryptoDashboard() {
               <FiArrowDown size={20} />
             </div>
 
-            <div className="flex justify-between items-center border-solid border border-gray-700 rounded-lg p-2 my-1">
+            <div className="my-1 flex items-center justify-between rounded-lg border border-solid border-gray-700 p-2">
               <div>
                 <p>Amount</p>
 
-                <p className="text-white font-bold ">$8783.20</p>
+                <p className="font-bold text-white ">$8783.20</p>
               </div>
 
               <div className="flex items-center">
@@ -298,11 +298,11 @@ export default function CryptoDashboard() {
               </div>
             </div>
 
-            <div className="flex justify-between items-center border-solid border border-gray-700 rounded-lg p-2 my-1">
+            <div className="my-1 flex items-center justify-between rounded-lg border border-solid border-gray-700 p-2">
               <div>
                 <p>Amount</p>
 
-                <p className="text-white font-bold">0.13871821</p>
+                <p className="font-bold text-white">0.13871821</p>
               </div>
 
               <div className="flex items-center">
@@ -314,18 +314,18 @@ export default function CryptoDashboard() {
             <motion.p
               whiteTap={{}}
               whileHover={{ backgroundColor: "#1e7cf7" }}
-              className="bg-blue-600 rounded-lg py-4 text-center text-white font-bold mt-auto cursor-pointer shadow-sm shadow-blue-600"
+              className="mt-auto cursor-pointer rounded-lg bg-blue-600 py-4 text-center font-bold text-white shadow-sm shadow-blue-600"
             >
               Buy BTC
             </motion.p>
           </div>
         </div>
 
-        <div className="flex flex-col flex-1 m-2 bg-[#191921] rounded-xl p-4 shadow-xl overflow-y-hidden scrollbar">
-          <p className="font-bold text-white text-lg mb-2">My Portfolio</p>
+        <div className="scrollbar m-2 flex flex-1 flex-col overflow-y-hidden rounded-xl bg-[#191921] p-4 shadow-xl">
+          <p className="mb-2 text-lg font-bold text-white">My Portfolio</p>
           {histories.map((history) => (
-            <div key={history.id} className="flex items-center my-3">
-              <img src={history.icon} className="w-9 h-9" alt="" />
+            <div key={history.id} className="my-3 flex items-center">
+              <img src={history.icon} className="h-9 w-9" alt="" />
 
               <div className="ml-2">
                 <p className="font-bold text-white">{history.name}</p>

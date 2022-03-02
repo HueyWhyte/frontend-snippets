@@ -12,17 +12,17 @@ export const meta: MetaFunction = () => {
 function services() {
   return (
     <Layout>
-      <section className="m-8 md:ml-36 w-4/5 md:w-3/4">
+      <section className="m-8 w-4/5 md:ml-36 md:w-3/4">
         <p>THE BEST</p>
-        <h1 className="buz-font font-semibold text-4xl md:text-7xl mt-8">
+        <h1 className="buz-font mt-8 text-4xl font-semibold md:text-7xl">
           Exquisite craftmanship <br /> is at the heart of our work.
         </h1>
       </section>
 
-      <section className="flex flex-col md:flex-row flex-4/5 md:w-1/2">
-        <p className="border-t border-yellow-600 w-52 md:w-32 mt-3 mr-3 mb-11" />
+      <section className="flex-4/5 flex flex-col md:w-1/2 md:flex-row">
+        <p className="mt-3 mr-3 mb-11 w-52 border-t border-yellow-600 md:w-32" />
 
-        <p className="w-4/5 md:w-1/2 mr-auto ml-auto">
+        <p className="mr-auto ml-auto w-4/5 md:w-1/2">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
           delectus veritatis iusto cupiditate recusandae porro omnis laboriosam
           cumque voluptate.
@@ -30,7 +30,7 @@ function services() {
       </section>
 
       <section
-        className="w-full h-64 mt-11"
+        className="mt-11 h-64 w-full"
         style={{
           background:
             "url(https://images.unsplash.com/photo-1581602835355-ef01c46a2fd1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80)",
@@ -40,21 +40,21 @@ function services() {
         }}
       ></section>
 
-      <section className="flex flex-col mt-11 items-center">
+      <section className="mt-11 flex flex-col items-center">
         <img
           src="https://th.bing.com/th/id/R.d274f48cbe6e7081140c6c661f112407?rik=leuylBUb7lWV5g&pid=ImgRaw&r=0"
-          className="w-9 h-9 m-4"
+          className="m-4 h-9 w-9"
           alt=""
         />
         <p className="font-bold">Lorem ipsum dolor sit amet,</p>
         <p>consectetur adipisicing elit. Fugit</p>
       </section>
 
-      <h1 className="buz-font font-semibold text-5xl md:text-8xl w-full md:w-2/3 text-center mt-11 mr-auto ml-auto">
+      <h1 className="buz-font mt-11 mr-auto ml-auto w-full text-center text-5xl font-semibold md:w-2/3 md:text-8xl">
         YOUR TRULY BESPOKE EXPERIENCE
       </h1>
 
-      <p className="w-4/5 md:w-1/2 text-justify md:text-center mt-11 mr-auto ml-auto">
+      <p className="mt-11 mr-auto ml-auto w-4/5 text-justify md:w-1/2 md:text-center">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quam
         libero, rem vel non id blanditiis officia, velit sunt ad, consequuntur
         ut sed eveniet quo eos? Soluta adipisci autem possimus! libero, rem vel
@@ -63,20 +63,20 @@ function services() {
       </p>
 
       <section className="mr-auto ml-auto mt-11 flex">
-        <p className="border-t border-yellow-600 w-32 mt-3 mr-3" />
+        <p className="mt-3 mr-3 w-32 border-t border-yellow-600" />
         <p>OUR STORY</p>
       </section>
 
-      <section className="2-4/5 md:w-2/3 flex flex-col md:flex-row mt-11 mr-auto ml-auto">
+      <section className="2-4/5 mt-11 mr-auto ml-auto flex flex-col md:w-2/3 md:flex-row">
         <div className="w-full md:w-1/2">
           <img
             src="https://images.unsplash.com/photo-1536766820879-059fec98ec0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
             alt=""
-            className="w-full h-3/4 object-cover mr-auto ml-auto"
+            className="mr-auto ml-auto h-3/4 w-full object-cover"
           />
         </div>
 
-        <div className="w-4/5 md:w-1/2 md:pl-14 mr-auto ml-auto mt-11 md:mt-0">
+        <div className="mr-auto ml-auto mt-11 w-4/5 md:mt-0 md:w-1/2 md:pl-14">
           <p className="mb-5 text-justify">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non aut at
             inventore consectetur fugit facere dolorum magni molestiae voluptate
@@ -127,17 +127,17 @@ function services() {
         />
       </section> */}
 
-      <section className="m-8 w-4/5 md:w-1/2 mt-48 mr-auto ml-auto">
+      <section className="m-8 mt-48 mr-auto ml-auto w-4/5 md:w-1/2">
         <p>GALLERY</p>
-        <h1 className="buz-font font-semibold text-4xl md:text-7xl mt-8">
+        <h1 className="buz-font mt-8 text-4xl font-semibold md:text-7xl">
           Superior Quality <br /> & Intelligent Design
         </h1>
       </section>
 
-      <section className="mr-auto md:ml-56 mt-11 flex flex-col md:flex-row w-4/5 md:w-1/2">
-        <p className="border-t border-yellow-600 w-80 mt-3 mr-3 mb-11" />
+      <section className="mr-auto mt-11 flex w-4/5 flex-col md:ml-56 md:w-1/2 md:flex-row">
+        <p className="mt-3 mr-3 mb-11 w-80 border-t border-yellow-600" />
 
-        <div className="md:mr-28 flex flex-col ml-11 mr-11 w-full">
+        <div className="ml-11 mr-11 flex w-full flex-col md:mr-28">
           <p className="text-justify">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo rem
             omnis cum nulla fugiat dicta autem at dolores accusantium unde.
@@ -147,12 +147,12 @@ function services() {
         </div>
       </section>
 
-      <section className="flex flex-col w-5/6 mt-24">
-        <p className="border-t border-gray-500 w-2/3" />
+      <section className="mt-24 flex w-5/6 flex-col">
+        <p className="w-2/3 border-t border-gray-500" />
 
-        <div className="flex mt-28 flex-col md:flex-row">
+        <div className="mt-28 flex flex-col md:flex-row">
           <div className="flex-1">
-            <h3 className="text-2xl buz-font mt-4 mb-4">
+            <h3 className="buz-font mt-4 mb-4 text-2xl">
               Discover the World of Bespoke Tailoring
             </h3>
             <p>
@@ -161,34 +161,34 @@ function services() {
             </p>
           </div>
 
-          <div className="flex flex-1 md:ml-36 mt-11 md:mt-0">
+          <div className="mt-11 flex flex-1 md:ml-36 md:mt-0">
             <div className="mr-3">
-              <h3 className="text-2xl buz-font mt-4 mb-4">Contact</h3>
+              <h3 className="buz-font mt-4 mb-4 text-2xl">Contact</h3>
               <p>Lorem ipsum dolor, perspiciatis?</p>
               <p>Lorem ipsum dolor sit amet?</p>
             </div>
 
             <div>
-              <h3 className="text-2xl buz-font mt-4 mb-4">Address</h3>
+              <h3 className="buz-font mt-4 mb-4 text-2xl">Address</h3>
               <p>perspiciatis?</p>
               <p>Lorem ipsum dolor sit amet</p>
             </div>
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row mt-5 mb-28">
+        <div className="mt-5 mb-28 flex flex-col md:flex-row">
           <div className="flex-1">
             <p className="mr-4 text-yellow-600">asfasfas asjfbasfasf</p>
           </div>
 
-          <div className="flex md:ml-36 flex-1 justify-between mt-11">
+          <div className="mt-11 flex flex-1 justify-between md:ml-36">
             <p className="mr-4 text-yellow-600">WHATSAPP</p>
             <p className="mr-4 text-yellow-600">INSTAGRAM</p>
             <p className="mr-4 text-yellow-600">FACEBOOK</p>
           </div>
         </div>
 
-        <p className="border-t border-gray-500 w-2/3 ml-auto" />
+        <p className="ml-auto w-2/3 border-t border-gray-500" />
       </section>
     </Layout>
   );

@@ -17,15 +17,15 @@ const Message = () => {
   console.log(user);
   return (
     <>
-      <section className="flex justify-between items-center">
-        <div className="flex items-center my-1 border-b border-gray-100 border-solid py-2">
+      <section className="flex items-center justify-between">
+        <div className="my-1 flex items-center border-b border-solid border-gray-100 py-2">
           <img
             src={user.profile ? user.profile : user.image}
             alt=""
-            className="object-cover w-16 h-16 rounded-full mr-2"
+            className="mr-2 h-16 w-16 rounded-full object-cover"
           />
-          <div className="flex flex-col flex-1">
-            <h3 className="font-bold text-xl">{user?.username}</h3>
+          <div className="flex flex-1 flex-col">
+            <h3 className="text-xl font-bold">{user?.username}</h3>
             <p className="text-gray-500">Online</p>
           </div>
         </div>
@@ -34,10 +34,10 @@ const Message = () => {
       </section>
 
       {/* messages area */}
-      <section className="flex flex-col flex-1 overflow-y-scroll scrollbar">
+      <section className="scrollbar flex flex-1 flex-col overflow-y-scroll">
         {MESSAGES.map((message) => (
           <div
-            className="flex flex-col rounded-t-2xl m-2 p-3 shadow-md"
+            className="m-2 flex flex-col rounded-t-2xl p-3 shadow-md"
             style={{
               backgroundColor: message?.sender === 1 ? "#af0083" : "white",
               marginLeft: message?.sender === 1 ? "auto" : 8,
@@ -60,7 +60,7 @@ const Message = () => {
               <img
                 src={`${message.image}`}
                 alt=""
-                className="w-full rounded-2xl my-2"
+                className="my-2 w-full rounded-2xl"
               />
             ) : null}
 
@@ -77,22 +77,22 @@ const Message = () => {
       </section>
 
       {/* message input field */}
-      <section className="flex items-center bottom-0 h-16 p-1 rounded-full bg-white shadow-lg">
+      <section className="bottom-0 flex h-16 items-center rounded-full bg-white p-1 shadow-lg">
         <FiPlus
           size={30}
           color="purple"
-          className="bg-pink-200 rounded-full mx-3"
+          className="mx-3 rounded-full bg-pink-200"
         />
         <input
           type="text"
           placeholder="Type a message here..."
-          className="px-2 flex-1 outline-none bg-transparent"
+          className="flex-1 bg-transparent px-2 outline-none"
         />
         😃
         <FiSend
           size={30}
           color="blue"
-          className="mx-4 bg-blue-200 rounded-full p-1"
+          className="mx-4 rounded-full bg-blue-200 p-1"
         />
       </section>
     </>
