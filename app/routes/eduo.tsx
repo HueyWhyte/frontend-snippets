@@ -1,11 +1,19 @@
-import { Link } from "remix";
+import { Link, MetaFunction } from "remix";
 import Layout from "~/components/eduo/Layout";
 import { AiFillPlayCircle, AiFillCamera } from "react-icons/ai";
 
+const pros = [
+  { id: 1, title: "Schools", price: "16,032", color: "green" },
+  { id: 2, title: "Users", price: "10M", color: "red" },
+  { id: 3, title: "Contries", price: "119", color: "orange" },
+];
 const some = [
   { id: 1, title: "Schools", price: "16,032", color: "green" },
   { id: 2, title: "Users", price: "10M", color: "red" },
-  { id: 3, title: "Contries", price: "119", color: "blue" },
+  { id: 3, title: "Contries", price: "119", color: "orange" },
+  { id: 4, title: "Contries", price: "119", color: "orange" },
+  { id: 5, title: "Contries", price: "119", color: "orange" },
+  { id: 6, title: "Contries", price: "119", color: "orange" },
 ];
 
 const courses = [
@@ -16,6 +24,7 @@ const courses = [
     color: "green",
     star: "4.6",
     category: "English Speaking",
+    img: "",
   },
   {
     id: 2,
@@ -24,6 +33,7 @@ const courses = [
     color: "red",
     star: "5.0",
     category: "Web Development",
+    img: "",
   },
   {
     id: 3,
@@ -32,6 +42,7 @@ const courses = [
     color: "blue",
     star: "4.2",
     category: "Web Development",
+    img: "",
   },
 ];
 
@@ -58,6 +69,13 @@ const benefits = [
     color: "red",
   },
 ];
+
+export const meta: MetaFunction = () => {
+  return {
+    title: "Eduo",
+    description: "",
+  };
+};
 
 const Eduo = () => {
   return (
@@ -87,23 +105,27 @@ const Eduo = () => {
           </div>
 
           <div className="mt-20 flex">
-            {some.map((som) => (
+            {pros.map((pro) => (
               <div
-                key={som.id}
+                key={pro.id}
                 className="mr-4 flex flex-col items-center rounded-xl bg-white pl-8 pr-8 pt-4 pb-4 shadow-md shadow-purple-800"
               >
                 <img src="" alt="" className="h-14 w-14" />
-                <p className={`mt-2 text-${som.color}-400 font-bold`}>
-                  {som.price}
+                <p className={`mt-2 text-${pro.color}-400 font-bold`}>
+                  {pro.price}
                 </p>
-                <p className="text-gray-800">{som.title}</p>
+                <p className="text-gray-800">{pro.title}</p>
               </div>
             ))}
           </div>
         </div>
 
         <div className="w-[40%]">
-          <img src="" alt="" />
+          <img
+            src="https://i.pinimg.com/originals/f4/23/20/f42320bb91db89d78fa7cf7e47f7da82.png"
+            alt=""
+            className="h-full"
+          />
         </div>
       </section>
 
@@ -146,7 +168,7 @@ const Eduo = () => {
         <div className="flex">
           {courses.map((course) => (
             <div key={course.id} className="m-3 w-1/3 rounded-xl p-2 shadow-md">
-              <img src="" alt="" />
+              <img src={course.img} alt="" className="h-60 w-full rounded-md" />
 
               <div className="mt-2 mb-2 flex">
                 <p className="mr-auto rounded-2xl bg-purple-200 pt-1 pb-1 pr-3 pl-3 text-purple-600">
@@ -188,6 +210,10 @@ const Eduo = () => {
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed,
             expedita repellendus, culpa dolorum eos veritatis quo vero ea exer.
           </p>
+
+          <button className="rounded-md bg-white pt-2 pb-2 pl-4 pr-4 font-semibold shadow-sm shadow-purple-600 transition-all duration-200 hover:bg-purple-600 hover:text-white">
+            Click Here to Apply
+          </button>
         </div>
 
         <div className="flex-1">
@@ -195,7 +221,7 @@ const Eduo = () => {
         </div>
       </section>
 
-      <section className="flex h-full flex-col rounded-full bg-purple-200 pt-16 pb-16 md:mr-[5%] md:ml-[5%]">
+      <section className="flex h-full flex-col rounded-3xl bg-purple-200 p-16 md:mr-[5%] md:ml-[5%]">
         <div className="mr-auto ml-auto flex w-1/2 flex-col">
           <h2 className="text-center text-4xl font-bold">Our innovation</h2>
           <p className="mt-8 mb-8 text-center text-gray-500">
@@ -204,13 +230,75 @@ const Eduo = () => {
           </p>
         </div>
 
-        <div>
+        <div className="flex w-full flex-wrap justify-between">
           {some.map((som) => (
-            <div>
-              <p>asf;amsf iasfhas f</p>
+            <div
+              key={som.id}
+              className="m-4 flex w-[30%] flex-col items-center justify-center rounded-2xl bg-white p-4"
+            >
+              <img src="" alt="" className="w-full" />
+              <p className="mt-4 mb-4 text-xl font-bold">asf;amsf iasfhas f</p>
+
+              <button className="rounded-md bg-purple-700 pt-2 pb-2 pl-4 pr-4 text-white hover:bg-purple-600">
+                Show me
+              </button>
             </div>
           ))}
-          <p>lsit items</p>
+        </div>
+      </section>
+
+      <section className="mt-10 mb-10 ml-auto mr-auto flex w-4/5 flex-col items-center justify-center p-5">
+        <h2 className="mt-4 text-center text-4xl font-bold">
+          Student Testimonials
+        </h2>
+
+        <p className="mt-4 mb-9 text-center">
+          Lorem ipsum dolor sit amet consectetur laudantium <br /> adipisicing
+          elit. Molestiae expedita
+        </p>
+
+        <div className="mr-auto ml-auto flex">
+          <img src="" alt="" />
+
+          <div className="mr-auto ml-auto w-2/3 rounded-[45px] border border-purple-800 p-6">
+            <p className="text-center">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti
+              enim, <br /> similique quam, in expedita soluta cumque aliquid,
+              officiis porro ut architecto veritatis quisquam laudantium? Ullam.
+            </p>
+
+            <div className="mt-6 flex flex-col items-center justify-center">
+              <img
+                src=""
+                alt=""
+                className="h-20 w-20 rounded-full object-cover"
+              />
+              <p className="text-xl font-bold">Jon Doe</p>
+              <p>Student</p>
+            </div>
+          </div>
+
+          <img src="" alt="" />
+        </div>
+      </section>
+
+      <section className="mt-10 mb-10 flex w-3/4 flex-col items-center justify-center rounded-3xl border-t-2 border-purple-900 p-5">
+        <h2 className="mt-4 text-center text-4xl font-bold">Get In Touch</h2>
+
+        <p className="mt-4 mb-4 text-center">
+          Lorem ipsum dolor sit amet consectetur laudantium <br /> adipisicing
+          elit. Molestiae expedita
+        </p>
+
+        <div className="flex w-4/5 items-center justify-center rounded-2xl border border-purple-900 bg-slate-200 p-1">
+          <input
+            type="text"
+            className="mr-2 flex-1 rounded-2xl bg-transparent pt-3 pb-4 pl-7 pr-7 outline-none"
+            placeholder="Enter your email address"
+          />
+          <button className="rounded-xl bg-purple-700 pt-5 pb-5 pl-8 pr-8 font-bold text-white hover:bg-purple-600">
+            Subscribe
+          </button>
         </div>
       </section>
     </Layout>
