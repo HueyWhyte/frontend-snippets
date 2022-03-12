@@ -97,7 +97,7 @@ const benefits = [
 export const meta: MetaFunction = () => {
   return {
     title: "Eduo",
-    description: "",
+    description: "Take your learning to the next level. Be you, be the best.",
   };
 };
 
