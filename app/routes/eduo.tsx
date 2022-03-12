@@ -5,15 +5,39 @@ import { AiFillPlayCircle, AiFillCamera } from "react-icons/ai";
 const pros = [
   { id: 1, title: "Schools", price: "16,032", color: "green" },
   { id: 2, title: "Users", price: "10M", color: "red" },
-  { id: 3, title: "Contries", price: "119", color: "orange" },
+  { id: 3, title: "Contries", price: "119", color: "purple" },
 ];
 const some = [
-  { id: 1, title: "Schools", price: "16,032", color: "green" },
-  { id: 2, title: "Users", price: "10M", color: "red" },
-  { id: 3, title: "Contries", price: "119", color: "orange" },
-  { id: 4, title: "Contries", price: "119", color: "orange" },
-  { id: 5, title: "Contries", price: "119", color: "orange" },
-  { id: 6, title: "Contries", price: "119", color: "orange" },
+  {
+    id: 1,
+    title: "Hours Freed",
+    img: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
+  },
+  {
+    id: 2,
+    title: "Real-Time Intellligence",
+    img: "https://images.unsplash.com/photo-1598986119545-ea2701477e93?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=611&q=80",
+  },
+  {
+    id: 3,
+    title: "Student Centered",
+    img: "https://images.unsplash.com/photo-1549057446-9f5c6ac91a04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1034&q=80",
+  },
+  {
+    id: 4,
+    title: "Mastery Focued",
+    img: "https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+  },
+  {
+    id: 5,
+    title: "Any Platform",
+    img: "https://images.unsplash.com/photo-1590650046871-92c887180603?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+  },
+  {
+    id: 6,
+    title: "Million of Resources",
+    img: "https://images.unsplash.com/photo-1556484687-30636164638b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+  },
 ];
 
 const courses = [
@@ -24,7 +48,7 @@ const courses = [
     color: "green",
     star: "4.6",
     category: "English Speaking",
-    img: "",
+    img: "https://images.unsplash.com/photo-1541178735493-479c1a27ed24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80",
   },
   {
     id: 2,
@@ -33,7 +57,7 @@ const courses = [
     color: "red",
     star: "5.0",
     category: "Web Development",
-    img: "",
+    img: "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
   },
   {
     id: 3,
@@ -42,7 +66,7 @@ const courses = [
     color: "blue",
     star: "4.2",
     category: "Web Development",
-    img: "",
+    img: "https://images.unsplash.com/photo-1571844307880-751c6d86f3f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=948&q=80",
   },
 ];
 
@@ -110,7 +134,21 @@ const Eduo = () => {
                 key={pro.id}
                 className="flex w-[30%] flex-col items-center rounded-xl bg-white pt-4 pb-4 shadow-md shadow-purple-800 md:mr-8 md:w-[20%] md:pl-8 md:pr-8"
               >
-                <img src="" alt="" className="h-14 w-14" />
+                <svg
+                  className={`h-14 w-14 rounded-full bg-${pro.color}-200 p-3 text-${pro.color}-400`}
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M16 4v12l-4-2-4 2V4M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  ></path>
+                </svg>
+
                 <p className={`mt-2 text-${pro.color}-400 font-bold`}>
                   {pro.price}
                 </p>
@@ -142,7 +180,22 @@ const Eduo = () => {
           <div className="mt-11">
             {benefits.map((benefit) => (
               <div key={benefit.id} className="mt-3 mb-3 flex">
-                <img src="" className="h-11 w-11 rounded-full" alt="" />
+                <svg
+                  className="h-11 w-11"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                  <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+                  ></path>
+                </svg>
 
                 <div className="ml-3">
                   <h5 className="font-bold">{benefit.title}</h5>
@@ -171,7 +224,11 @@ const Eduo = () => {
               key={course.id}
               className="m-3 w-full rounded-xl p-2 shadow-md md:ml-auto md:mr-auto md:w-[30%]"
             >
-              <img src={course.img} alt="" className="h-60 w-full rounded-md" />
+              <img
+                src={course.img}
+                alt=""
+                className="h-60 w-full rounded-md object-cover"
+              />
 
               <div className="mt-2 mb-2 flex">
                 <p className="mr-auto rounded-2xl bg-purple-200 pt-1 pb-1 pr-3 pl-3 text-purple-600">
@@ -220,7 +277,11 @@ const Eduo = () => {
         </div>
 
         <div className="flex-1">
-          <img src="" alt="" />
+          <img
+            className="mt-8 rounded-lg"
+            src="https://th.bing.com/th/id/OIP.2_6eG8f4NDpqC3vguiA4DAHaIH?pid=ImgDet&rs=1"
+            alt=""
+          />
         </div>
       </section>
 
@@ -241,8 +302,8 @@ const Eduo = () => {
               key={som.id}
               className="m-4 flex flex-col items-center justify-center rounded-2xl bg-white p-4 md:w-[30%]"
             >
-              <img src="" alt="" className="w-full" />
-              <p className="mt-4 mb-4 text-xl font-bold">asf;amsf iasfhas f</p>
+              <img src={som.img} alt="" className="h-40 w-full object-cover" />
+              <p className="mt-4 mb-4 text-xl font-bold">{som.title}</p>
 
               <button className="rounded-md bg-purple-700 pt-2 pb-2 pl-4 pr-4 text-white hover:bg-purple-600">
                 Show me
@@ -274,7 +335,7 @@ const Eduo = () => {
 
             <div className="mt-6 flex flex-col items-center justify-center">
               <img
-                src=""
+                src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
                 alt=""
                 className="h-20 w-20 rounded-full object-cover"
               />

@@ -19,7 +19,7 @@ function Layout({
         {children}
       </main>
 
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
