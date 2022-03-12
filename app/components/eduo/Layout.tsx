@@ -7,14 +7,14 @@ function Layout({
   className,
 }: {
   children: ReactNode;
-  className: string;
+  className?: string;
 }) {
   return (
     <>
       <Navigation />
 
       <main
-        className={`flex min-h-screen flex-col items-center pt-16 pb-32 ${className}`}
+        className={`flex min-h-screen flex-col items-center pt-16 pb-32 ${className} flex min-h-screen w-full flex-col `}
       >
         {children}
       </main>
