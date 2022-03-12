@@ -169,7 +169,11 @@ const Eduo = () => {
 
       <section className="flex h-full w-full flex-col-reverse p-3 pt-16 pb-16 md:flex-row md:pr-[10%] md:pl-[10%]">
         <div className="flex-1">
-          <p>some image</p>
+          <img
+            src="https://th.bing.com/th/id/R.59e77cb4d4796479b5226718df023097?rik=ytIMhHu6mYAn3w&pid=ImgRaw&r=0"
+            alt=""
+            className="h-full"
+          />
         </div>
 
         <div className="flex-1 ">
